@@ -42,7 +42,7 @@ echo -e "${GREEN}Done${ENDCOLOR}"
 echo -e "${GREEN}Packages Updating${ENDCOLOR}"
 
 if [ -f /etc/centos-release ] || [ -f /etc/redhat-release ]; then
-    yum update -y
+    yum update -y ; yum install -y kernel-devel
 elif [ -f /etc/lsb-release ]; then
     apt update ; apt upgrade -y
 else
