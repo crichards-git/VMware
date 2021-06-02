@@ -42,9 +42,9 @@ echo -e "${GREEN}Done${ENDCOLOR}"
 echo -e "${GREEN}Packages Updating${ENDCOLOR}"
 
 if [ -f /etc/centos-release ] || [ -f /etc/redhat-release ]; then
-    yum update -y ; yum install -y kernel-devel
+    yum update -y ; yum install -y kernel-devel ; yum install -y open-vm-tools
 elif [ -f /etc/lsb-release ]; then
-    apt update ; apt upgrade -y
+    apt update ; apt upgrade -y ; apt install -y open-vm-tools
 else
     echo -e "${RED}ERROR! Make Sure Distro is RPM or APT Based${ENDCOLOR}"
     exit 1
