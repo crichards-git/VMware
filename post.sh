@@ -69,7 +69,7 @@ fi
 echo -e "${GREEN}Download Acronis?${ENDCOLOR}"
 select ac in "Yes" "No"; do
     case $ac in
-        Yes ) wget  'https://us5-cloud.acronis.com/bc/api/ams/links/agents/redirect?language=multi&system=linux&architecture=64&productType=enterprise' -O acronis.bin ; break;;
+        Yes ) wget 'https://us5-cloud.acronis.com/bc/api/ams/links/agents/redirect?language=multi&system=linux&architecture=64&productType=enterprise' -O acronis.bin ; break;;
         No ) break;;
     esac
 done
