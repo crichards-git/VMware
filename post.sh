@@ -73,7 +73,6 @@ select ac in "Yes" "No"; do
         No ) break;;
     esac
 done
-fi
 
 # System Summary
 
