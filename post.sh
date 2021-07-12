@@ -89,7 +89,7 @@ free -h
 echo -e "${GREEN}Does Everything Look Correct?${ENDCOLOR}"
 select yn in "Yes" "No"; do
     case $yn in
-        Yes ) rm post.sh ; exit;;
+        Yes ) rm VMware/post.sh ; exit;;
         No ) exit;;
     esac
 done
