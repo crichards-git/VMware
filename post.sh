@@ -1,5 +1,5 @@
 #!/bin/bash
-# VMware I2 Post Install Script for CentOS and Ubuntu
+# VMware Post Install Script for CentOS and Ubuntu
 # v1.5
 
 GREEN="\e[32m"
