@@ -59,7 +59,7 @@ if [ -f /usr/local/cpanel/cpkeyclt ]; then
 echo -e "${GREEN}Did You Get a Cpanel License?${ENDCOLOR}"
 select cp in "Yes" "No"; do
     case $cp in
-        Yes ) /usr/local/cpanel/cpkeyclt; break;;
+        Yes ) /usr/local/cpanel/cpkeyclt; /usr/local/cpanel/scripts/build_cpnat; break;;
         No ) echo -e "${GREEN}Get a License and Select 1${ENDCOLOR}";;
     esac
 done
