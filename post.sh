@@ -1,6 +1,6 @@
 #!/bin/bash
 # VMware Post Install Script for CentOS and Ubuntu
-# v1.5
+# v1.6
 
 GREEN="\e[32m"
 RED="\e[31m"
